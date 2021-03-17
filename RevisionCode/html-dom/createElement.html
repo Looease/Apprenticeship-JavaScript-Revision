@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <style>
+      .normal {
+        background-color: lightblue;
+      }
+
+      .highlighted {
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myText">Some text</div>
+    <p>Text in a p tag</p>
+    <p class="normal">Normal text</p>
+    <script>
+      var button = document.createElement("BUTTON");
+      button.innerHTML = "Change text";
+      button.onclick = function() {
+        var normalElements = document.getElementsByClassName("normal");
+        for (let element of normalElements) {
+          element.setAttribute("class", "highlighted");
+        }
+        document.getElementById("myText").innerHTML = "Text is changed";
+      }
+      document.body.appendChild(button);
+    </script>
+  </body>
+</html>

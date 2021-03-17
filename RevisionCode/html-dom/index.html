@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>All about cats</title>
+    </head>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 20%;
+        }
+    </style>
+    <body onload="loaded()">
+
+        <p id="width"></p>
+
+        <h1>A Cat</h1>
+
+        <img 
+        id="catImage" 
+        onmouseover="mouseOverCat()" 
+        src="data:image/jpeg;base64,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" 
+        alt="">
+        <div id="meow"></div>
+        
+        <strong style="font-weight: bold;" id="catInfo">This cat is called Lennon</strong>
+        Name<input id="catName" value="Lennon" onchange="catNameChange()"></input>
+       
+        <a href="https://www.purina.com/articles/cat/facts/10-fascinating-facts-about-cats">Interesting facts about cats</a>
+
+     
+        <div style="width: 100px; height: 100px; background-color: red;"></div>
+        <div id="finishedLoading"></div>
+        <script>
+            //Display page inner Width
+            document.getElementById("width").innerHTML = `Window inner width is ${window.innerWidth} px`;
+            //On hover fill div with meow and update hover details when dog 
+            function mouseOverCat(){
+                if (isADog)
+                document.getElementById("meow").innerHTML = "Woof!";
+                 else
+                 document.getElementById("meow").innerHTML = "Meow!";
+            };
+            //On load say the cat is ready
+            function loaded(){
+            document.getElementById("finishedLoading").innerHTML = 'The cat is ready';
+            };
+            //Change cat name
+            function catNameChange() {
+            let catName = document.getElementById("catName").value;
+            document.getElementById("catInfo").innerHTML = `The cat is called ${catName}`;
+            };
+            //Change to dog 
+            let isADog = false;
+            document.body.onkeydown = function onKeyDown(e) {
+            if (e.key == 'd') {
+             isADog = true;
+            document.getElementById("catImage").src="https://miro.medium.com/max/1280/1*PN2u9HO6g0ddb43vhAfWUw.jpeg";
+            }};
+            // Onclick change meow/woof to purr/bark
+            function mouseClickCat() {
+            if (isADog)
+            document.getElementById("meow").innerHTML = "Bark!";
+            else
+            document.getElementById("meow").innerHTML = "Purr...";
+      }
+            
+
+
+
+        </script>
+    </body>
+</html>

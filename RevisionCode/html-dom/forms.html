@@ -1,0 +1,33 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <form name="myForm">
+      Name: <input type="text" name="fname" value="Bob"><br />
+      Date of birth: <input type="date" name="date"><br />
+      Telephone number: <input type="tel" name="phone" value="01234 567890"><br />
+      Choice of item:<br>
+      <input type="radio" name="food" value="apples">Apples<br />
+      <input type="radio" name="food" value="bananas">Bananas<br />
+      <input type="radio" name="food" value="cheese">Cheese<br />
+      <input type="radio" name="food" value="dates">Dates<br />
+      Quantity: <input type="number" name="quantity"><br />
+      Colour: <input type="color" name="colour"><br />
+    </form>
+    <button onclick="onReviewOrder()">Review order</button>
+    <p id="orderDetails"></p>
+    <script>
+      function onReviewOrder() {
+        let details = `
+          Name: ${document.forms["myForm"]["fname"].value}<br />
+          Date of birth: ${document.forms["myForm"]["date"].value}<br />
+          Telephone number: ${document.forms["myForm"]["phone"].value}<br />
+          Choice of item: ${document.forms["myForm"]["food"].value}<br />
+          Quantity: ${document.forms["myForm"]["quantity"].value}<br />
+          Colour: ${document.forms["myForm"]["colour"].value}<br />
+        `;
+        document.getElementById("orderDetails").innerHTML = details;
+      }
+    </script>
+  </body>
+</html>

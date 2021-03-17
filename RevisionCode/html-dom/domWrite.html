@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Document Write</title>
+    </head>
+    <body>
+        <h1 id="header">Hello</h1>
+        <div onclick="clickMe()">Click me</div>
+        <script>
+            // Document Write 
+            // let header = document.getElementById("header");
+            // function clickMe(){
+            //     document.write("Goodbye");
+            // };
+
+            //Document Inner HTML 
+            function clickMe(){
+                document.getElementById("header").innerHTML = "Goodbye";
+            }
+        </script>
+    </body>
+</html>
