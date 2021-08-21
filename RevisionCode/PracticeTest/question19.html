@@ -1,14 +1,31 @@
 <html>
   <head>
+    <style>
+      .color{
+        background-color: aqua;
+        width: 100px;
+        height: 100px;
+        ;
+      }
+    </style>
   </head>
   <body id="body">
-
+    <p id="p"></p>
    </form>
     <script>
         var a = "Denver";
         var b = 5;
         var c = a + b;
         console.log(typeof(c));
+
+       let element = document.getElementById("p");
+       let newClass = document.createAttribute("class");
+        newClass.value = "color";
+        element.setAttributeNode(newClass);
+       
+        
+
+
     </script>
   </body>
 </html>

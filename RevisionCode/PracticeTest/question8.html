@@ -1,5 +1,10 @@
 <html>
   <head>
+    <style>
+      .style{
+          background-color: aquamarine;
+      }
+    </style>
   </head>
   <body id="body">
    <form id="calculator" action="">
@@ -8,13 +13,6 @@
     <input type="text" id="result">
     <input type="button" onclick="add()" value="+">
    </form>
-    <script>
-      function add(){
-        var a = eval(document.getElementById("a").value);
-        var b = eval(document.getElementById("b").value)
-        document.getElementById("result").value = a + b;
-      }
-  
-    </script>
+    <script src="question8.js"></script>
   </body>
 </html>

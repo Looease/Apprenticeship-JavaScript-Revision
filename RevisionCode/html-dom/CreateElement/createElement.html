@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <style>
+      .normal {
+        background-color: lightblue;
+      }
+
+      .highlighted {
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <a id="myText">Some text</a>
+    <button onclick="changeText()"></button>
+    <p>Text in a p tag</p>
+    <p class="normal">Normal text</p>
+
+    <button onclick="this.innerHTML = Date()">The time is?</button>
+
+    <script src="createElement.js"></script>

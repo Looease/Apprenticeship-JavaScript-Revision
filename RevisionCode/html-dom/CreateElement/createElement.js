@@ -1,20 +1,3 @@
-<html>
-  <head>
-    <style>
-      .normal {
-        background-color: lightblue;
-      }
-
-      .highlighted {
-        background-color: darkblue;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="myText">Some text</div>
-    <p>Text in a p tag</p>
-    <p class="normal">Normal text</p>
-    <script>
       var button = document.createElement("BUTTON");
       button.innerHTML = "Change text";
       button.onclick = function() {
@@ -25,6 +8,10 @@
         document.getElementById("myText").innerHTML = "Text is changed";
       }
       document.body.appendChild(button);
-    </script>
-  </body>
-</html>
+
+      function changeText(){
+        let element = document.getElementById("myText");
+       let newClass = document.createAttribute("class");
+        newClass.value = "highlighted";
+        element.setAttributeNode(newClass);
+      }

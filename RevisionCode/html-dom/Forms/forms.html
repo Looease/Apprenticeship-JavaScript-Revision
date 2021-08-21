@@ -16,18 +16,6 @@
     </form>
     <button onclick="onReviewOrder()">Review order</button>
     <p id="orderDetails"></p>
-    <script>
-      function onReviewOrder() {
-        let details = `
-          Name: ${document.forms["myForm"]["fname"].value}<br />
-          Date of birth: ${document.forms["myForm"]["date"].value}<br />
-          Telephone number: ${document.forms["myForm"]["phone"].value}<br />
-          Choice of item: ${document.forms["myForm"]["food"].value}<br />
-          Quantity: ${document.forms["myForm"]["quantity"].value}<br />
-          Colour: ${document.forms["myForm"]["colour"].value}<br />
-        `;
-        document.getElementById("orderDetails").innerHTML = details;
-      }
-    </script>
+    <script src="forms.js"></script>
   </body>
 </html>

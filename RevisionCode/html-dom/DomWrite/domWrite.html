@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Document Write</title>
+        <style>
+            .democlass {
+            color: red;
+}
+        </style>
+    </head>
+    <body>
+        <h1 id="header">Hello</h1>
+        <div onclick="clickMe()">Click me</div>
+
+        <div id="list"></div>
+        
+        <p>Date() vs new Date()</p>
+        <button id="demo" onclick="document.getElementById('demo').innerHTML = Date()">Date Object with current time</button>
+        <button id="random" onclick="document.getElementById('random').innerHTML = new Date(2021, 07, 12)">New Date Object</button>
+
+        <p>Create attribute / Set Attribute</p>
+        <p>Turn the header red</p>
+        <button onclick="myFunction()">Try it</button>
+
+        <script src="domWrite.js"></script>
+    </body>
+</html>
